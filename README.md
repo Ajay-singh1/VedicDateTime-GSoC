@@ -11,12 +11,12 @@ Access the HTML Vignette for this package here:-
 
 1. **`magnitude_of_sol_eclipse(jd, lat, long , alt)`**  
    - Computes detailed attributes of a solar eclipse for a given Julian day and location.  
-   - Returns: Eclipse type (e.g., total, annular), magnitude, and visibility.  
+   - Returns: Calculates the Magnitude of Lunar Eclipse.
 
 2. **`magnitude_of_lunar_eclipse(jd, lat, long , alt)`**  
    - Delivers specifics of a lunar eclipse at a specified time and place.  
-   - Returns: Eclipse type (e.g., partial, penumbral) and duration.  
-
+   - Returns: Calculates the Magnitude of Solar Eclipse.
+   
 3. **`planetary_phase_data(jd)`**  
    - Fetches positional data (longitude, latitude, speed) for planets on a given Julian day.  
    - Returns: A list of celestial coordinates for all major planets.  
@@ -27,7 +27,7 @@ Access the HTML Vignette for this package here:-
 
 5. **`is_moon_waxing(jd)`**  
    - Determines the Moon’s phase based on its angular relationship with the Sun.  
-   - Returns: Phase name (e.g., "New Moon," "Full Moon").  
+   - Returns: Phase name (i.e Waxing or Waning)
 
 ## Installation
 Get started with *VedicDateTime-GSoC* from GitHub:
