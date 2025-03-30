@@ -11,11 +11,11 @@ Access the HTML Vignette for this package here:-
 
 1. **`magnitude_of_sol_eclipse(jd, lat, long , alt)`**  
    - Computes detailed attributes of a solar eclipse for a given Julian day and location.  
-   - Returns: Calculates the Magnitude of Lunar Eclipse.
+   - Returns: Calculates the Magnitude of Solar Eclipse.
 
 2. **`magnitude_of_lunar_eclipse(jd, lat, long , alt)`**  
    - Delivers specifics of a lunar eclipse at a specified time and place.  
-   - Returns: Calculates the Magnitude of Solar Eclipse.
+   - Returns: Calculates the Magnitude of Lunar Eclipse.
    
 3. **`planetary_phase_data(jd)`**  
    - Fetches positional data (longitude, latitude, speed) for planets on a given Julian day.  
