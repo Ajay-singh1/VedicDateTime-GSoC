@@ -125,7 +125,7 @@ magnitude_of_lunar_eclipse(jd,lat,long,alt)
 ## Contributing
 
 To contribute to this project:-
-1. For this Github Repo
+1. Fork this Github Repo
 2. Make changes and open a pull request
 3. Report bugs or suggest features via GitHub issues.
 
