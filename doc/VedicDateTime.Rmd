@@ -1,0 +1,75 @@
+<!-- # --- -->
+title: "VedicDateTime"
+subtitle: "VedicDateTime Dummy Package for tests"
+author: "Ajay Singh"
+output: 
+   rmarkdown::html_vignette
+   css: !expr bslib::bs_theme(bootswatch = "cerulean", version = 5) <!--This will use the Bootstrap 5 theme-->
+vignette: >
+  %\VignetteIndexEntry{VedicDateTime}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+<!--This loads the swephR package required by the VedicDateTimeSample package-->
+```{r, include = FALSE}
+library(swephR)
+data(SE)
+options(digits = 5)
+```
+```{r, include = FALSE}
+library(VedicDateTime)
+data(SE)
+```
+```{r setup}
+library(VedicDateTimeSample)
+```
+\break
+To calculate the magnitude of a solar eclipse at a given location:-
+
+```{r}
+jd <- 2460760.5
+lat <-28.7041
+long <- 77.1025
+alt <- 0
+magnitude_of_sol_eclipse(jd,lat,long,alt)
+```
+
+To calculate the magnitude of a lunar eclipse at a given location:-
+
+```{r}
+jd <- 2460760.5
+lat <-28.7041
+long <- 77.1025
+alt <- 0
+magnitude_of_lunar_eclipse(jd,lat,long,alt)
+```
+
+To find the Nirayana rashi:-
+
+```{r}
+jd <- 2460760.5
+nirayana_rashi_name(jd)
+```
+
+To check if moon is in a waning or waing phase given gregorian date:-
+
+```{r}
+jd <- 2460760.5
+is_moon_waxing(jd)
+```
+
+To calculate the planetary phase data of a planet given julian day:-
+
+```{r}
+jd_ut <- 2460760.5
+planet <-1
+planetary_phase_data(jd_ut,planet)
+```
+
