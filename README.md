@@ -37,7 +37,7 @@ Get started with *VedicDateTime-GSoC* from GitHub:
 install.packages("devtools")
 
 # Install the package
-devtools::install_github("www.github.com/Ajay-singh1/VedicDateTime-GSoC")
+devtools::install_github("Ajay-singh1/VedicDateTime-GSoC")
 ```
 ## Quick Start
 
