@@ -9,11 +9,11 @@ Access the HTML Vignette for this package here:-
 ## Features
 *VedicDateTime-GSoC* includes five core functions:
 
-1. **`magnitude_of_sol_eclipse(jd, lat, lon , alt)`**  
+1. **`magnitude_of_sol_eclipse(jd, lat, long , alt)`**  
    - Computes detailed attributes of a solar eclipse for a given Julian day and location.  
    - Returns: Eclipse type (e.g., total, annular), magnitude, and visibility.  
 
-2. **`magnitude_of_lunar_eclipse(jd, lat, lon , alt)`**  
+2. **`magnitude_of_lunar_eclipse(jd, lat, long , alt)`**  
    - Delivers specifics of a lunar eclipse at a specified time and place.  
    - Returns: Eclipse type (e.g., partial, penumbral) and duration.  
 
@@ -85,5 +85,40 @@ planetary_phase_data(jd,planet)
 library(VedicDateTime-GSoC)
 jd <- 2460760.5
 lat <-28.7041
+long <- 77.1025 
 alt <- 0
 # call the function magnitude_of_sol_eclipse
+magnitude_of_sol_eclipse(jd ,  lat , long , alt)
+# Result:-
+#> $return
+#> [1] 0
+#> 
+#> $attr
+#>  [1]   0.0000   0.0000   0.0000   0.0000 207.6427  -9.2408  -9.2408  47.2886
+#>  [9]   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+#> [17]   0.0000   0.0000   0.0000   0.0000
+#> 
+#> $serr
+#> [1] "SwissEph file 'sepl_18.se1' not found in PATH '/home/ajay/R/x86_64-pc-linux-gnu-library/4.4/swephR/ephemeris/' \nusing Moshier eph.; "
+```
+5. To calculate the magnitude of lunar eclipse:-
+```R
+# Load the package
+library(VedicDateTime-GSoC)
+jd <- 2460760.5
+lat <-28.7041
+long <- 77.1025
+alt <- 0
+magnitude_of_lunar_eclipse(jd,lat,long,alt)
+#> $return
+#> [1] 0
+#> 
+#> $attr
+#>  [1]  0.0000e+00 -7.6669e+01  0.0000e+00  0.0000e+00  2.5496e+02 -2.3198e+01
+#>  [7] -2.3198e+01  0.0000e+00  0.0000e+00 -1.0000e+08 -1.0000e+08  0.0000e+00
+#> [13]  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+#> [19]  0.0000e+00  0.0000e+00
+#> 
+#> $serr
+#> [1] ""
+```
