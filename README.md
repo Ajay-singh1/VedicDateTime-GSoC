@@ -122,3 +122,12 @@ magnitude_of_lunar_eclipse(jd,lat,long,alt)
 #> $serr
 #> [1] ""
 ```
+## Contributing
+
+To contribute to this project:-
+1. For this Github Repo
+2. Make changes and open a pull request
+3. Report bugs or suggest features via GitHub issues.
+
+## What`s next
+This package is a stepping stone for my GSoC 2025 vision: integrating the Sayana (tropical) system, adding a corrected Lagna function, and enhancing eclipse predictions and documentation. Stay tuned for a cosmic upgrade!
