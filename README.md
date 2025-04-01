@@ -17,7 +17,7 @@ Access the HTML Vignette for this package here:-
    - Delivers specifics of a lunar eclipse at a specified time and place.  
    - Returns: Calculates the Magnitude of Lunar Eclipse.
    
-3. **`planetary_phase_data(jd)`**  
+3. **`planetary_phase_data(jd , planet)`**  
    - Fetches positional data (longitude, latitude, speed) for planets on a given Julian day.  
    - Returns: A list of celestial coordinates for all major planets.  
 
